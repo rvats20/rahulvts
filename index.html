@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="rahul vats, portfolio, rahul, cloud data engineer, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Rahul's Portfolio. Cloud Engineer and ML Engineer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/404.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon"
+        href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEhISEBIPEhUVFRUVEBUQEA8PEhUQFxUYFhUVFRcYHiggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGi0mICUtLS8tLS0tLS0vLS0uLS4tLS0yLS0tLS0rLS0rKy0tLy0tLS0tLi0tLS8tLS0rLS0rL//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABAYDBQcCAQj/xABAEAACAQIDAwYMBAYCAwEAAAAAAQIDEQQFIRIxQQYiUWFxgQcTMjNScpGhsbLB8CRzwtEUI0JikuE0ojVUghf/xAAbAQEAAgMBAQAAAAAAAAAAAAAABAUBAgMGB//EADcRAAIBAgIGCQMDAwUAAAAAAAABAgMRBDEFEiFBUXEyYYGRobHB0fATIuEGQoJicpIUIzM0Uv/aAAwDAQACEQMRAD8A7NlsFGjSjFJJU4JJaJJRSSRKI+Af8qn6kPlRIAAAAAAAAAAAAAAAANPnmZOlanTa8ZLXdfZj0/fWaKGKxNNuaqbTflLen3MxY/Fp4itPfq4rX0eb9DD/ABFTekuyx5DG42rKvK0mlFtKzayefN7+4uqGHUaaVltzv1lrwebQnRdWVk4L+Ylq0+GnXw7TSYjMa+I1UpU48Ixb3dLfErFbMJKp4rVKdnNXaTabtp1am2hialuYkl16+wzidI1qkIxbts223vj82CGEhBuS7L7vjN5lOb1IzjSrPaUnaE3vv0Pp6L9ZZTm+Ixct70lHVNb7rU6FhqynCM07qUVJPqauW2h8VOrCUJu7Vrcn+fMh46koNSSzMwALgggAAAAAAAAAAAAAAEfL/NUvUh8qJBHy/wA1S9SHyokAAAAAAAAAAAAAAxYmezCclwi2u5XMpr8+rbGHqv8Att/lzfqaVJKEXJ7k33G0I60kuJz/AA3Oml2vtuWKMElYr+VK9TuX0LEzwkFbYX9V7Sr5nh4/xNJ2379X98Sy0oJLQr2ZP8RT7f2LFDcbLbbkKmSNHntNJply5J1NrC0+raX/AGdvc0VHlFHm3N/yDrbVGceEZ3XZJf6LTQ7tiOaa8U/QjY1XoJ8GizgA9QU4AAAAAAAAAAAAAABHy/zVL1IfKiQR8v8ANUvUh8qJAAAAAAAAAAAAAANJyvlbDS65RX1+huyvctp2oRXTUXyyIuN/69T+1nfDL/ejzKrkespP74/sb6W40fJ3Xaf3vZvKm48ZxLmp0isZi/xFPt+hZaW4q2YS/E0/vgWijuM8ORtUyRrc/wDIJ3g/qO9WPBxi+9O31ZEzyPMM3g7qrbqx4uEWum0ZNP5kT9Fu2Jj2+T9jhiFfDv5vLyAD1pSAAAAAAAAAAAAAAAEfL/NUvUh8qJBHy/zVL1IfKiQAAAAAAAAAAAAACq8vK1oUo9MpS/xVv1FqKRy/qc+nHopt/wCUrfpIGk5auGlbfZd7V/AlYKN6y6iDydi1DXpb7nY29XcazIYNQ1NlW3M8juZaz6ZUsxf4iH30lrw70RUswf4mHb+5a8L5K7DL/byOlTJEfN1/LZD5C1NnEqPpQnH9X6TYZjG8H2Gk5LT2MXS9fZ/yjs/UkYKWriIv+peLs/A5yV6Ml1PyOpAA9oUAAAAAAAAAAAAAAABHy3zNL8uHyokEbLPM0vy4fKiSAAAAAAAAAAAAADnXLattYma9GMI+2O1+ovePxcaNOdSe6Cu+t8Eutuy7zlmIxEq1TbnrKc9qXt3LqSsim0xWSpxp7279iv65cix0dTbk57ls8vQseUK1OP397iXX3MwYFc2PYZsRuPNLok19IpWaVbYqmut3Llg/JXYUDOKv4yn7fan/AKL9gvJXYdaisoda9WdKmQxvkPsKthK3iq8Z+jOE3bqaf0LZiFoynY3SbtxRiEmp3RmkrppnYISTSa1TV12M9Gn5NY6FbD09l3cIxhNPepRil7Ha6ZuD3EJqcVJbzz0ouMnF7gADY1AAAAAAAAAAAAI2WeZpflw+VEkjZZ5ml+XD5USQAAAAAAAAAAAACmeEDGv+VQT3/wAyfZ5MO6+17EVTAQ2p9SNjy0xfjMXNLdCKh3rV++TXcYsnpcTyOkqmtXm79Xds8z0GGjqUYrt7ywYdaI9Yl6CijzitxXromv7jnGbv8bT7EdDwHkrsXwOd5u/xkOz6s6Dlcrwj2L4Eit0afL1Z1nkSay0KrnFKzv8Adi2VFoaDNqV0zhe0rmKTPXITGOGKUOFSMovouk5J+63edLOLYXFSoVadRb4TUu2z1Xfqjs8ZXSa4np9ETvSlHg/B/lMrtJQtNS4ry/DR6ABbFcAAAAAAAAAAAARss8zS/Lh8qJJGyzzNL8uHyokgAAAAAAAAAAAh5tV8XRrT9GnNrtUXYw3baZSu7HJsRW8bVqVPTnJ/5Sb+pYMrp6IruBjdotWAjZI8LWk5S2npJ7FsJ8EYsVuM8SNjHoay6Jwjmc6zT/mQ7/izoGWeSjn+af8ANh98WX/LvJR3xGVPl6s6zyZOkavMIaM2pBxsdGR5nOBTMdHnM67kWK8dh6NTjKEXL1rc733OVZnTt7S/eD+ttYRR9Cc4+17X6i+0PP7nHivJ/lnHSMb01Lg/Ms4APQFMAAAAAAAAAAAARss8zS/Lh8qJJGyzzNL8uHyokgAAAAAAAAAA0nLCtsYSt1pRX/1JL4XN2VHwhYi1OlT9Kbl3RVvjNewj4uepQnLq89i8Tvho61WK6/Ip2W09xaMHHQ0OX09xYsOtDxMneReVMjOQ8a9GTCDjXoxPI5QzOe5xO2Mh2HQMtfNXYc2zqr+Mh0M6PlfkR7EScSrQp8jrJ7GbEj4uOhIRixC0I8sjlHMq2Zw3/f3vLN4NKv8ALrQvqpqVuNnFK/8A1NFmMNSZyBqqGJlB/wBdOSXXKLUl7lIsdFVNWvFPfs7zOLjrUJd/cdGAB6woAAAAAAAAAAAACNlnmaX5cPlRJI2WeZpflw+VEkAAAAAAAAAAHNOUmO/icTJp3hDmQ6LJ6vvd+5IuHKnNPEUHsu053jDpXpS7l72ig4SkUOmcTZKkub9PfuLTR9LOo+S9fYnYKG43VFGuwsDZ09x56OZNqHtmux0rJk+bNdjZaMzM1gcyzj/mU+1fA6XlT5q7F9Dm2bRvjKfU0/cdHyt81ffAl4x/ZT5HS2fM20TxVWh6iJ7iNuOO80WPgaqjWlRqwqx8qEk13cO/d3m8xsDT4in99ZinJxd0SY7UdVwmIjVhCpDWMoqS7GviZyl8g808rDze67pX9so/q72XQ9thqyrU1NdvU9556tSdKbj8sAAdzkAAAAAAAAARss8zS/Lh8qJJGyzzNL8uHyokgAAAAA+N21feAfTBisRClCU5u0Yq8n98TQYvl1ltKsqDxEZTbSfi4zrKLe5SlBNJ9XDjY0HKLO5YmWzC8aUXonvk/Sl9F9qJjcUsNC7zeS49fJfNpIw1B1pWWW/5xImbZhLF1XOWiWkI+jD9+LMlCnYw4aiT6UDxtWpKpJyk7tl4korVWSM+HiTokOlvJiZrE5zPNVmsxstGTq0zT5jV0Zhu7NoIomZO+LgdAyqXNRzrGzviYvtL7lFTmr7++JOxitCHI348ywQZkkRqUjNchxew4SRAxcTWV4e822KIE4miO0WatTlSnGcHaUWmn1rcdMyTM4Ymkpx0e6ceMZcV2dHUc8rUxleY1MLU8ZT1T0qQeilH6NcHw9pa6Oxv0JWl0Xn7+/FZbThisP8AWjszXy3zI6qCg0PClg1VdLFU6+GfCcoqrTa4O8Lys+nZt02LrgMdRrwVShUp1YPdKnOM4+1cT1tnqqW55PcUT2PV3rcSQAYAAAAAABGyzzNL8uHyokkbLPM0vy4fKiSAAVXlRy7wOAcoVajqVUr+KorbmtLpSfkw4b2nZ3OP8pPCFmGNcoqbw9J6eKoNxbj0TqeVLr3J9B3pYedTbay+d5znVjE6ryr8I+CwLlTi/wCIrLR06Ulsxl0VKm6PYrtdByPlPy5x2YJwqTVOle/iqKcYvo25PnT73a+tkV2nQJ1DB33llSwkIdbIdSvJlr5KZXGnTjOyc5q7fFR4JfEs9CgaTkvUvBQe+PyvVfVdxaKcD5xphVY4ypGq7u/h+23Vq2PW4OUHh4Onlbx3+IpQJcYnyETIkVZ2PiMu3oYmYalWxkxa59xFQ0OZVtGTsVXNHmNTQ6U43Z0iipYmp+IXsLxlNZ2Rz2tO9aL6/qy7ZTU0RZY6H2RNYO9+ZbcPVJe3oabDVbEyNa+4qTDieqruzDKJ7PtjBkiVYESrS9pspxI9WmZTsbJlO5YYSMqLk0tqDWy+OslFr3+4qWV5picHPxmGq1KM+Lg9JW3KcXeM11STLhyplt2p66859HFJFSrYex9G/T+HlHApzyk20uC/Lu+08vpWsnibR3JJ8/xlzudX5HeFmlW2aWYRjQm9FWj5iT/vW+m+vWO/VbjpWFxNOrFTpThUi90qcozi+xrQ/KkqRscg5QYvATU8NVlBXvKDblRm9z24Xs9Fa+/oaJtTBJ7YbOrcRYYl5SP1ADm3Jjwr4estjGpYapeynFTnRl131dPvuuvo6LTmpJSi1JNXTTTTT3NNb0QJ05QdpIlRkpK6MgANDYqeZ8s8Fl+HpeOqbc/Fw2aVJxnVfNW9XtFdcmjlnKvwk43G7dOj+Got6Km2q0o9E6ie59EbdGut6XSo2S7F1cDPCn0FvSwkIbXtfzcQKmIk9iMMKJIo0Lkijh+knUaBMsRnIwUMMbCjQMlKkSqVM3saNmTL5+LnGavpvtxXQXjD2aTXH4FOp0ze5FiWn4qV+Lg+j+39jy36n0a61JYmmvugvu648f4+TfAuNEYzUl9GT2Sy58O3z5m9ij0Ej5NngD0pirTsavEYgzY2oaPGV7X1N4R1mbxRlr1zSZnidGbbJcoxOOk1SSUV5dSd1CPV1vqXuLpkfIOjRkqleXj5J3jHZ2KafS1duXfp1FxhMBUk1K2zicq2Jp0rpvbwKhyd5AyxGCq4ipGSrSV8JF817Mdbu/p6pX4WfE0+AqOLcZJxadmmmmpJ2aae5neSv8oOSuHxfPd6dThUgld9U1/Uvf1lrisD9SCUM14kChjrSevk/AoFDEkylXMec8lsVhIufNq015UoXvFdMovVLrV7Gvwle9jzlfCzpO0lYtIThUV4u5ZKM7mc1+CmbKBDMMxSiRsVNQi5S3LeTpIr2eYnb5kXzU+d1vh7CfovR8sdiFSV9XOT4R93kuL6rkXGYqOGpObz3Li/m1+9is4pOTlJ727s11aibipAjVKZ9XUVFJRVktluWXgeLcm229rZo62HIc6djeVaRFrUTDRlM1Dpm35Ocpsbl7f8NUtFu86c1t0pPpceD64tMhVKVjFJGkopqzN1Jp3R0P8A/YsZ/wCthvbV/cHOtk+nH/S0v/J1+vU4mSjSbSv0L4EylRPuHp6R7F8CZTpkiK2EeT2nmlSJlOmIQM8IG5qfacCVTgfIQM8EZNT7CJkR8R8cjJgsGAzaMrQqc2W5dEn9GScRWsVCpMwTzipSjs3Uktykm32J33HjNK/phSf1MHZcYPYv4vd/a9nBrYj0GB0vb7K/+Xv796eZvMbiCr57mUYJtySS3vh/v9zBjOVVOzvdb9yv37zQwhPM8RRwlFPaq1ElJ7oxs9qVvRjHak/VKvB6GxCqJVYOK339/YuamOoqF4STfUz9AeDaanluGnGOztRk9VZye3Lnvt395aCNl+DhQpU6NNWhShGnBdEIxUV7kSS+SSVkUsnrNt7wADJgx1opxkpK6aakulNao/PXJvO4143tstPWN9q3ou9ldNH6JPzp4QcleU5i50oSjhq/Pp2V46+cpp7rxk7pcIySI+KwaxNNxS+5bV6r5wJWFxH0Z/d0Xn7lwwdc3OHrXOa4LlXS00k+G63xN1DOZ1Fo9lPelq2utlHQ/T2Mrztq6q3uXos2+5cWiZiNJYakr613wW3xyXn1FmzTMVFOEHdtWk09Ix/c0LMNOS4GTaPe6O0dSwNH6VPbvbebfHq6lu63dvyuKxU8RPXl2Lgvm/0slinEi1IE2RhnEnkYgVIESpA2FSJgqQNTY1lWmRKlM2k4kepA1NiB4sEvZXQgDJKw8ebH1V8CXTiYsMubH1V8ESoIzHJGss2fYRJEIniETPE2NTJBHtHg+3Mp3MHuUjFOZ5nIiV6tjAGIr2K/meN4Lu/cz5hi0k/u76Cu4vEb29X9+45ykdYRuyNi6vD2nevBFyHeBpPFYmNsTWikoyWtGg9VB9E5aOXRZLg70DwOclp4vFxxU1/Iw01Jtq6niLXhBeq2pvotHp0/Q5U4qrd6q7fYsqUNVAAEI7AAAArvLjkxTzPCzoStGa5+Hn6FZJ7L9V3aa6G+NixAym07oH5CnSqUKk6VWLhOEnCpF74yTs1/s3+V422jZf8Aw2cjXNPMcPHnQSWLjFayprSNbtitJf22f9LOSYHEW09hc4espxTK+vTsy/UatyVGZXMtxl0vvQ3FOoTEyG0TLnyRjUz3cyYMNRGCUSTIwyBkiVIEaSJs0R6kTDMojeLR9MoFjYl4XyY+qvgSIgGqyRh5mWJ7QBuamQxgGsTLMUzBUABg1OM4d5W813rvAOFTIlUukfoHwM/+Mp+vU+KLyAUtb/kkT4dFAAHM3AAAAAAMGP8ANVPUn8rPyjya89S7PoAT8Bm+z1OGI6PeWKn5b7fqbSiAWyKxmSJ7PoNjU8s8TAAMcjHMAwDwAAD/2Q=="
+        type="image/x-png">
+    <title>Rahul Kumar</title>
+</head>
+
+
+<body>
+    <div>
+
+
+        <!-- pre loader -->
+        <!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+    </div> -->
+
+        <!-- navbar starts -->
+
+        <header>
+
+            <a class="logo"><i class="fab fa-python"></i> Rahul Kumar</a>
+            <div id="menu" class="fas fa-bars"></div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <!--   <li><a href="#footer">Contact</a></li> -->
+                </ul>
+
+            </nav>
+
+        </header>
+        <!-- navbar ends -->
+
+
+
+        <!-- hero section starts -->
+        <section class="home bd-grid" id="home">
+
+            <div class="content bd-grid" id="content">
+                <h2>Hi There,<br /> I'm <span>Rahul</span> Vats</h2>
+                <p>i am into <span class="typing-text"></span></p>
+                <a href="#about" class="btn"><span>About Me</span>
+                    <i class="fas fa-arrow-circle-down"></i>
+                </a>
+                <div class="socials bd-grid" id="socials">
+                    <ul class="social-icons">
+                        <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/rahul-vats1/"
+                                target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a class="github" aria-label="GitHub" href="https://github.com/rvats20" target="_blank"><i
+                                    class="fab fa-github"></i></a></li>
+                        <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/rahuldve20"
+                                target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/rahul.vats_/"><i
+                                    class="fab fa-instagram" target="_blank"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="home__img" id="home">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="50" y="60" href="Assets/img/perfil.png" />
+                    </g>
+                </svg>
+            </div>
+    </div><!--
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path
+                                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path
+                                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png" />
+                        </g>
+                    </svg>
+                </div>-->
+    </div>
+
+    <!-- hero section ends -->
+
+
+    <!-- about section starts -->
+    <section class="about bd-grid" id="about">
+        <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
+        <div class="row">
+
+            <div class="image">
+                <img draggable="false" class="tilt" src="./Assets/img/perfil.png" alt="">
+            </div>
+            <div class="content">
+                <h3>I'm Rahul Vats</h3><br>
+                <span class="tag">Cloud Data Engineer</span><br />
+                <p class="tag">Machine Learning Engineer, Data Science Enthusiast, Deep Learning Expert, LLM Expert,
+                    NLP Specialist, Computer Vision Specialist, OpenCV Specialist, Transformer Expert, Cloud Application
+                    Developer</p>
+                <p>I am a Cloud Engineer and AI/ML-Enthusiast based in Noida, India.
+                    As a skilled Cloud and Data Engineer, I bring a solid track record in the IT and Finance
+                    sectors. My
+                    expertise lies in cloud technologies such as AWS, Azure, Docker, and Kubernetes, and I am
+                    well-versed in DevOps and Agile methodologies.
+                    I am very passionate about improving my coding skills & developing highely sclable applications.
+                    <!-- I build WebApps and Websites using MERN Stack. -->
+                    Working for myself to improve my skills.
+                    Love to do coding and build models.
+                </p>
+                <br>
+                <hr>
+
+                <!--    <div class="box-container">
+                     <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> -->
+                <div class="box">
+                    <p><span> phone : </span> +91 7838500042/7982767898</p>
+                    <p><span> email : </span> rahul.rkumar23@gmail.com</p>
+                    <p><span> place : </span> Noida, India - 201301</p>
+                </div>
+
+
+                <div class="resumebtn">
+                    <a href="https://drive.google.com/file/d/14dp0FUWG9xykgag66wU1T2rmeoj6p4dl/view?usp=sharing"
+                        target="_blank" class="btn"><span>Resume</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- about section ends -->
+
+    <!-- skills section starts -->
+    <section class="skills bd-grid" id="skills">
+
+        <h2 class="heading"><i class="fas fa-laptop-code"></i> My <span>Skills & Abilities</span></h2>
+
+        <div class="container">
+
+            <div class="row" id="skillsContainer">
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" />
+                        <span>HTML5</span>
+                    </div>
+                </div>
+
+                <div class="row" id="skillsContainer">
+
+                    <div class="bar">
+                        <div class="info">
+                            <img src="https://img.icons8.com/color/48/000000/css3.png" />
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <div class="row" id="skillsContainer">
+
+                        <div class="bar">
+                            <div class="info">
+                                <img src="https://img.icons8.com/color/48/000000/django.png" />
+                                <span>Django</span>
+                            </div>
+                        </div>
+                        <div class="row" id="skillsContainer">
+
+                            <div class="bar">
+                                <div class="info">
+                                    <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" />
+                                    <span>JAVASCRIPT</span>
+                                </div>
+                            </div>
+                            <div class="row" id="skillsContainer">
+
+                                <div class="bar">
+                                    <div class="info">
+                                        <img src="https://img.icons8.com/color/48/000000/python--v1.png" />
+                                        <span>PYTHON</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="skillsContainer">
+
+                                <div class="bar">
+                                    <div class="info">
+                                        <img src="https://img.icons8.com/color/48/000000/mysql-logo.png" />
+                                        <span>MYSQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="skillsContainer">
+
+                                <div class="bar">
+                                    <div class="info">
+                                        <img src="https://img.icons8.com/glyph-neue/48/ffffff/github.png" />
+                                        <span>GITHUB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br />
+        <div class="workbtn">
+            <a href="https://drive.google.com/file/d/14dp0FUWG9xykgag66wU1T2rmeoj6p4dl/view?usp=sharing"
+                class="btn"><span>Cloud Projects ></span>
+
+            </a>
+        </div>
+    </section>
+
+    <!-- skills section ends -->
+
+    <section class="experience" id="experience">
+
+        <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+
+        <div class="timeline">
+
+            <div class="container right">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Insightsoftware Internation LLC</h2>
+                    </div>
+                    <div class="desc">
+                        <h3>Cloud Engineer</h3>
+                        <p>Jun 2023 - Present</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container left">
+                <div class="content">
+                    <div class="tag">
+                        <h2>RateGain Travels & Technologies</h2>
+                    </div>
+                    <div class="desc">
+                        <h3>Sr. Data Engineer | Database Engineer</h3>
+                        <p>April 2023 - March 2019</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Net4Network Pvt. Ltd.</h2>
+                    </div>
+                    <div class="desc">
+                        <h3>System Engineer | Full Time</h3>
+                        <p>September 2016 - 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="morebtn">
+            <a href="/experience" class="btn"><span>View All</span>
+                <i class="fas fa-arrow-right"></i></a>
+        </div><br />
+
+    </section>
+    <!--===== WORK =====
+    
+
+        <div class="work bd-grid">
+            <a href="" class="work__img">
+                <img src="assets/img/pic02.jpg" alt="">
+            </a>
+            <a href="" class="word__img">
+                <img src="assets/img/pic03.jpg" alt="">
+            </a>
+            <a href="" class="work__img">
+                <img src="assets/img/pic04.jpg" alt="">
+            </a>
+            <a href="" class="work__img">
+                <img src="assets/img/work4.jpg" alt="">
+            </a>
+            <a href="" class="work__img">
+                <img src="assets/img/work5.jpg" alt="">
+            </a>
+            <a href="" class="work__img">
+                <img src="assets/img/work6.jpg" alt="">
+            </a>
+        </div>
+        
+    </section>-->
+
+
+    <!-- education section starts -->
+    <section class="education section" id="education">
+
+        <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education $ Certifications</span></h1>
+
+        <p class="qoute">"Either write something worth reading or do something worth writing."</p>
+
+        <div class="box-container">
+
+            <div class="box alt">
+
+
+                <div class="content">
+                    <h3>Bachelor of Science, Major - Maths and Physics</h3>
+                    <p>Degree Collage , Noida | CCS University</p>
+                    <h4>2012-2015 | Completed</h4>
+                </div>
+            </div>
+
+            <div class="box alt">
+
+                <div class="content">
+                    <h3>SQL for Data Science</h3>
+                    <p>IT University, Noida | UP</p>
+                    <h4>2022-2023 | Completed</h4>
+                </div>
+            </div>
+            <div class="box alt">
+                <div class="content">
+                    <h3>CompTIA Cloud Essentials+</h3>
+                    <p>IT University, Noida | UP</p>
+                    <h4>2023-2023 | Completed</h4>
+                </div>
+            </div>
+            <div class="box alt">
+                <div class="content">
+                    <h3>Data Analysis with Python</h3>
+                    <p>IT University, Noida | UP</p>
+                    <h4>2023-2023 | Completed</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- education section ends -->
+
+
+    <!-- work project section starts 
+<section class="work section" id="work">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Work</span></h2>
+
+  <div class="work_container bd-grid">
+
+    <div class="box tilt">
+      <img draggable="false" src="https://www.nicepng.com/png/full/111-1112693_portfolio-my-portfolio.png" alt=""/>
+      <div class="content">
+        <h3>Portfolio Website</h3>
+        </div>
+        <div class="desc">
+          
+          <div class="btns">
+            <a href="https://comforting-quokka-28fc60.netlify.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/Yashmenaria1/portfolio.github.io" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+<div class="box-container">
+
+  <div class="work__container bd-grid">
+    <img draggable="false" src="assets/img/pic02.jpg" alt="" />
+    <div class="content">
+      <div class="tag">
+      <h3>Azure storage solution</h3>
+      </div>
+      <div class="desc">
+        <p>The "Azure storage solution" model, which classifies text according to whether it exhibits offensive attributes (i.e. Insult, Obscene, Severe Toxicity).</p>
+        <div class="btns">
+          <a href="https://655ded5de2e9a419d5981ab6--astounding-basbousa-109023.netlify.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+          <a href="https://github.com/Yashmenaria1/Toxic-Comment-Classifier" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="work__container bd-grid">
+        <img draggable="false" src="assets/img/pic02.jpg" alt="" />
+        <div class="content">
+          <div class="tag">
+          <h3>Azure storage solution</h3>
+          </div>
+          <div class="desc">
+            <p>The "Azure storage solution" model, which classifies text according to whether it exhibits offensive attributes (i.e. Insult, Obscene, Severe Toxicity).</p>
+            <div class="btns">
+              <a href="https://655ded5de2e9a419d5981ab6--astounding-basbousa-109023.netlify.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+              <a href="https://github.com/Yashmenaria1/Toxic-Comment-Classifier" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+<div class="box-container">
+
+    <div class="box tilt">
+      <img draggable="false" src="https://storage.googleapis.com/kaggle-datasets-images/1866301/3047725/a8442c4170479f83d6dcab16b655bf87/dataset-cover.jpg?t=2022-01-15-19-25-24" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>Wine Quality Predictior</h3>
+        </div>
+        <div class="desc">
+          <p>The "Wine Quality Prediction" project is a data-driven application of machine learning techniques to assess and predict the quality of wines based on various chemical and sensory features. This project aims to assist winemakers, sommeliers, and wine enthusiasts in evaluating and improving wine quality by analyzing historical data and building predictive models.</p>
+          <div class="btns">
+            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/Yashmenaria1/WineQualityPrediction" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+<div class="box-container">
+
+  <div class="box tilt">
+    <img draggable="false" src="https://storage.googleapis.com/kaggle-media/competitions/House%20Prices/kaggle_5407_media_housesbanner.png" alt="" />
+    <div class="content">
+      <div class="tag">
+      <h3>House Sale Predictior</h3>
+      </div>
+      <div class="desc">
+        <p>The "House Sale Prediction" project is an application of data science and machine learning techniques to predict the sale prices of residential properties accurately. This project aims to assist home buyers, sellers, and real estate professionals in making informed decisions by leveraging historical housing data and various features influencing property values.</p>
+        <div class="btns">
+          <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+          <a href="https://github.com/Yashmenaria1/HouseSalePrediction" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="viewall">
+  <a href="/projects" class="btn"><span>View All</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+
+</section>
+work project section ends -->
+
+    <!-- experience section starts -->
+    <!-- <section class="experience" id="experience">
+
+  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2> -->
+
+    <!-- <div class="timeline">
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>Self Employed</h2>
+        </div>
+        <div class="desc">
+            <h3>Full Stack Developer</h3>
+            <p>Oct 2023 - present</p>
+        </div>
+      </div>
+    </div>
+    <div class="morebtn">
+    <a href="/experience" class="btn"><span>View All</span>
+      <i class="fas fa-arrow-right"></i>
+  </a>
+  </div>
+
+</div> -->
+
+    <!-- </section>-->
+    <!-- experience section ends -->
+
+    <!-- contact section starts 
+    <section class="contact" id="contact">
+
+
+        <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+        <div class="container">
+            <div class="contact__container bd-grid">
+
+                <form id="contact-form">
+
+                    <div class="form-group">
+                        <div class="field">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <i class='fas fa-user'></i>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="email" placeholder="Email" required>
+                            <i class='fas fa-envelope'></i>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="phone" placeholder="Phone">
+                            <i class='fas fa-phone-alt'></i>
+                        </div>
+                        <div class="message">
+                            <textarea placeholder="Message" name="message" required></textarea>
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit">
+                            Submit <i class="fa fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>-->
+    <!-- contact section ends -->
+
+    </main>
+    <!-- footer section starts -->
+    <section class="footer section" id="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Rahul's Portfolio</h3>
+                <p>Thank you for visiting my personal portfolio website. Connect with me over social Media.
+                    <br />
+                    <br /> Keep Rising 🚀. Connect with me over live chat!
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+                <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+                <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+                <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+                <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+                <!-- <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a> -->
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <p> <i class="fas fa-phone"></i>+91 7838500042 </p>
+                <p> <i class="fas fa-envelope"></i>rahul.rkumar23@gmail.com</p>
+                <p> <i class="fas fa-map-marked-alt"></i>Noida, INDIA-201301></p>
+                <br>
+
+                <div class="share" id="share">
+                    <a href="https://www.linkedin.com/in/rahul-vats1/" class="fab fa-linkedin" aria-label="LinkedIn"
+                        target="_blank"></a>
+                    <a href="https://github.com/rvats20" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+                    <a href="mailto:rahul.kumar1@gmail.com" class="fas fa-envelope" aria-label="Mail"
+                        target="_blank"></a>
+                    <a href="https://twitter.com/rahuldve20" class="fab fa-twitter" aria-label="Twitter"
+                        target="_blank"></a>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
+                href="https://www.linkedin.com/in/yash-m-31033121b/"> Rahul Vats</a></h1>
+
+    </section>
+    <!-- footer section ends -->
+
+
+    <!-- scroll top btn -->
+    <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+    <!-- scroll back to top -->
+
+    </main>
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- typed.js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+        integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- particle.js links -->
+    <script src="./Assets/js/app.js"></script>
+
+    <!-- vanilla tilt.js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+        integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- scroll reveal anim -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+    <script src="./Assets/js/script.js"></script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="./Assets/js/main.js"></script>
+    </div>
+
+</body>
+
+</html>
