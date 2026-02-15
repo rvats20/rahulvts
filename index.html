@@ -1,457 +1,1115 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="rahul vats, portfolio, rahul, AI solutions, automated monitoring, cloud orchestration, AI agents, personal portfolio" />
-    <meta name="description" content="Welcome to Rahul's Portfolio. AI Solutions & Automated Monitoring Specialist." />
-    <link rel="stylesheet" href="./Assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link id='favicon' rel="shortcut icon"
-        href="data:image/jpeg;base64,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"
-        type="image/x-png">
-    <title>Rahul Kumar</title>
+    <title>Rahul Vats — AI Solutions & Cloud Infrastructure</title>
+    <meta name="description" content="Rahul Vats — AI Solutions Specialist with 12+ years in cloud infrastructure, automation, and AI agents. Engineering Specialist at insightsoftware.">
+    <meta name="keywords" content="rahul vats, portfolio, AI solutions, automated monitoring, cloud orchestration, AI agents, kubernetes, docker, python">
+
+    <!-- OG Meta Tags -->
+    <meta property="og:title" content="Rahul Vats — AI Solutions & Cloud Infrastructure">
+    <meta property="og:description" content="12+ years building AI solutions, automated monitoring systems, and cloud infrastructure. Engineering Specialist at insightsoftware.">
+    <meta property="og:image" content="https://rvats20.github.io/rahulvts/Assets/img/perfil.png">
+    <meta property="og:url" content="https://rvats20.github.io/rahulvts/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rahul Vats — AI Solutions & Cloud Infrastructure">
+    <meta name="twitter:description" content="12+ years building AI solutions, automated monitoring systems, and cloud infrastructure.">
+    <meta name="twitter:image" content="https://rvats20.github.io/rahulvts/Assets/img/perfil.png">
+
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" type="image/svg+xml">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+                    colors: {
+                        dark: { base: '#0a0a0f', card: 'rgba(255,255,255,0.05)', surface: '#111118' },
+                    },
+                    animation: {
+                        'gradient': 'gradient 8s ease infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'typing': 'typing 3.5s steps(30) infinite alternate, blink 0.7s step-end infinite',
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Scroll progress bar */
+        #scroll-progress {
+            position: fixed; top: 0; left: 0; height: 3px; z-index: 9999;
+            background: linear-gradient(90deg, #8b5cf6, #3b82f6, #8b5cf6);
+            background-size: 200% 100%;
+            animation: gradient 3s ease infinite;
+            transition: width 0.1s linear;
+        }
+
+        /* Gradient mesh hero background */
+        .hero-mesh {
+            background:
+                radial-gradient(ellipse at 20% 50%, rgba(139,92,246,0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(59,130,246,0.12) 0%, transparent 50%),
+                radial-gradient(ellipse at 60% 80%, rgba(245,158,11,0.08) 0%, transparent 50%);
+        }
+        .dark .hero-mesh { background:
+            radial-gradient(ellipse at 20% 50%, rgba(139,92,246,0.2) 0%, transparent 50%),
+            radial-gradient(ellipse at 80% 20%, rgba(59,130,246,0.15) 0%, transparent 50%),
+            radial-gradient(ellipse at 60% 80%, rgba(245,158,11,0.1) 0%, transparent 50%);
+        }
+
+        /* CSS typing animation */
+        .typing-container { display: inline-flex; }
+        .typing-text-anim {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid #8b5cf6;
+            animation: typing-expand 3.5s steps(30) infinite alternate, blink 0.7s step-end infinite;
+        }
+        @keyframes typing-expand {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+
+        /* Reveal animations */
+        .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* Floating particles */
+        .particle {
+            position: absolute; border-radius: 50%; pointer-events: none;
+            background: rgba(139,92,246,0.3);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Glassmorphism nav */
+        .glass-nav {
+            backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+            background: rgba(255,255,255,0.8);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .dark .glass-nav {
+            background: rgba(10,10,15,0.85);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* Gradient text */
+        .gradient-text {
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Card hover glow */
+        .card-glow {
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        .card-glow:hover {
+            border-color: rgba(139,92,246,0.3);
+            box-shadow: 0 0 30px rgba(139,92,246,0.1);
+        }
+
+        /* Skill badge hover */
+        .skill-badge {
+            transition: all 0.3s ease;
+        }
+        .skill-badge:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 20px rgba(139,92,246,0.2);
+        }
+
+        /* Timeline line */
+        .timeline-line {
+            position: absolute; left: 50%; top: 0; bottom: 0; width: 2px;
+            background: linear-gradient(180deg, #8b5cf6, #3b82f6);
+            transform: translateX(-50%);
+        }
+        @media (max-width: 768px) {
+            .timeline-line { left: 20px; }
+        }
+
+        /* Command palette */
+        .cmd-palette-overlay {
+            position: fixed; inset: 0; z-index: 9998;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(4px);
+            display: none;
+        }
+        .cmd-palette-overlay.open { display: flex; justify-content: center; padding-top: 20vh; }
+        .cmd-palette {
+            width: 90%; max-width: 560px; max-height: 400px;
+            border-radius: 16px; overflow: hidden;
+        }
+        .cmd-item.selected {
+            background: rgba(139,92,246,0.15);
+        }
+
+        /* Smooth scroll */
+        html { scroll-behavior: smooth; }
+
+        /* Pulsing dot */
+        .pulse-dot {
+            width: 8px; height: 8px; border-radius: 50%; background: #22c55e;
+            animation: pulse-ring 2s ease-in-out infinite;
+        }
+        @keyframes pulse-ring {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.6); }
+            50% { box-shadow: 0 0 0 8px rgba(34,197,94,0); }
+        }
+
+        /* Light mode adjustments */
+        .light .glass-nav { background: rgba(255,255,255,0.9); }
+    </style>
 </head>
 
-<body>
-    <div>
-        <header>
-            <a class="logo"><i class="fa-brands fa-python"></i> Rahul Kumar</a>
-            <div id="menu" class="fa-solid fa-bars"></div>
-            <nav class="navbar">
-                <ul>
-                    <li><a class="active" href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#blogs">Blogs</a></li>
-                    <li><a href="#education">Education</a></li>
-                </ul>
-            </nav>
-        </header>
+<body class="bg-slate-50 dark:bg-dark-base text-slate-800 dark:text-gray-200 font-sans transition-colors duration-300">
 
-        <!-- hero section -->
-        <section class="home bd-grid" id="home">
-            <div class="content bd-grid" id="content">
-                <h2>Hi There,<br /> I'm <span>Rahul</span> Vats</h2>
-                <p>i am into <span class="typing-text"></span></p>
-                <a href="#about" class="btn"><span>About Me</span>
-                    <i class="fa-solid fa-circle-arrow-down"></i>
-                </a>
-                <div class="socials bd-grid" id="socials">
-                    <ul class="social-icons">
-                        <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/rahulvatts/"
-                                target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                        <li><a class="github" aria-label="GitHub" href="https://github.com/rvats20" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a></li>
-                        <li><a class="twitter" aria-label="X / Twitter" href="https://x.com/rahulx"
-                                target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="home__img">
-                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <mask id="mask0" mask-type="alpha">
-                        <path
-                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                    </mask>
-                    <g mask="url(#mask0)">
-                        <path
-                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                        <image class="home__blob-img" x="50" y="60" href="Assets/img/perfil.png" />
-                    </g>
-                </svg>
-            </div>
-        </section>
+<!-- Scroll Progress Bar -->
+<div id="scroll-progress" style="width: 0%"></div>
 
-        <!-- about section -->
-        <section class="about bd-grid" id="about">
-            <h2 class="heading"><i class="fa-solid fa-user"></i> About <span>Me</span></h2>
+<!-- Navigation -->
+<nav class="glass-nav fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+        <a href="#hero" class="text-xl font-bold gradient-text">RV</a>
 
-            <div class="row">
-                <div class="image">
-                    <img draggable="false" class="tilt" src="./Assets/img/perfil.png" alt="Rahul Vats">
-                </div>
-                <div class="content">
-                    <h3>I'm Rahul Vats</h3><br>
-                    <span class="tag">I help organizations implement AI solutions with Automated Monitoring + Alerts.</span><br />
-                    <p>With 12 years of experience in IT infrastructure and cloud technologies, I specialize in
-                        automation, AI agents, and container orchestration. My expertise spans building intelligent
-                        monitoring systems, deploying scalable cloud solutions, and implementing AI-powered workflows
-                        that drive operational efficiency. I'm passionate about bridging the gap between traditional
-                        infrastructure and modern AI-driven solutions.</p>
-                    <br>
-                    <hr>
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-6">
+            <a href="#about" class="text-sm hover:text-violet-500 transition-colors">About</a>
+            <a href="#skills" class="text-sm hover:text-violet-500 transition-colors">Skills</a>
+            <a href="#experience" class="text-sm hover:text-violet-500 transition-colors">Experience</a>
+            <a href="#projects" class="text-sm hover:text-violet-500 transition-colors">Projects</a>
+            <a href="#opensource" class="text-sm hover:text-violet-500 transition-colors">Open Source</a>
+            <a href="#blogs" class="text-sm hover:text-violet-500 transition-colors">Blog</a>
+            <a href="#education" class="text-sm hover:text-violet-500 transition-colors">Education</a>
+        </div>
 
-                    <div class="box">
-                        <p><span> email : </span> rahul.rkumar23@gmail.com</p>
-                        <p><span> place : </span> Noida, Sector-73, India</p>
-                    </div>
+        <div class="flex items-center gap-3">
+            <!-- Cmd+K hint -->
+            <button onclick="openCmdPalette()" class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 text-xs text-slate-500 dark:text-gray-500 border border-slate-200 dark:border-gray-700 rounded-lg hover:border-violet-400 transition-colors">
+                <i data-lucide="search" class="w-3 h-3"></i>
+                <span class="font-mono">⌘K</span>
+            </button>
 
-                    <div class="resumebtn">
-                        <a href="https://drive.google.com/file/d/14dp0FUWG9xykgag66wU1T2rmeoj6p4dl/view?usp=sharing"
-                            target="_blank" class="btn"><span>Resume</span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <!-- Dark/Light Toggle -->
+            <button id="theme-toggle" class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle theme">
+                <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
+                <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+            </button>
 
-        <!-- skills section -->
-        <section class="skills bd-grid" id="skills">
-            <h2 class="heading"><i class="fa-solid fa-laptop-code"></i> My <span>Skills & Abilities</span></h2>
-
-            <div class="container">
-                <div class="row" id="skillsContainer">
-                    <div class="bar">
-                        <div class="info">
-                            <img src="https://img.icons8.com/color/48/000000/tensorflow.png" alt="TensorFlow" />
-                            <span>TensorFlow</span>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <img src="https://img.icons8.com/color/48/000000/python--v1.png" alt="Python" />
-                            <span>Python</span>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS" />
-                            <span>AWS</span>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker" />
-                            <span>Docker</span>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <img src="https://img.icons8.com/color/48/000000/kubernetes.png" alt="Kubernetes" />
-                            <span>Kubernetes</span>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <img src="https://img.icons8.com/color/48/000000/settings--v1.png" alt="Automation" />
-                            <span>Automation</span>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <img src="https://img.icons8.com/color/48/000000/cloud-computing.png" alt="Cloud Computing" />
-                            <span>Cloud</span>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <img src="https://img.icons8.com/color/48/000000/artificial-intelligence.png" alt="AI Agents" />
-                            <span>AI Agents</span>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <img src="https://img.icons8.com/color/48/000000/flow-chart.png" alt="Algorithms" />
-                            <span>Algorithms</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- experience section -->
-        <section class="experience" id="experience">
-            <h2 class="heading"><i class="fa-solid fa-briefcase"></i> Experience </h2>
-
-            <div class="timeline">
-                <div class="container right">
-                    <div class="content">
-                        <div class="tag">
-                            <h2>insightsoftware</h2>
-                        </div>
-                        <div class="desc">
-                            <h3>Engineering Specialist</h3>
-                            <p>Jul 2023 - Jan 2026</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container left">
-                    <div class="content">
-                        <div class="tag">
-                            <h2>RateGain</h2>
-                        </div>
-                        <div class="desc">
-                            <h3>Senior System Analyst</h3>
-                            <p>Apr 2019 - Mar 2023</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container right">
-                    <div class="content">
-                        <div class="tag">
-                            <h2>Net4 India Ltd</h2>
-                        </div>
-                        <div class="desc">
-                            <h3>System Integration Specialist</h3>
-                            <p>Mar 2016 - Mar 2019</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container left">
-                    <div class="content">
-                        <div class="tag">
-                            <h2>Wipro</h2>
-                        </div>
-                        <div class="desc">
-                            <h3>Technical Support Specialist</h3>
-                            <p>May 2014 - Mar 2016</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- portfolio section -->
-        <section class="portfolio" id="portfolio">
-            <h2 class="heading"><i class="fa-solid fa-code"></i> My <span>Projects</span></h2>
-
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
-                    <div class="project-info">
-                        <h3>Fintech Fraud Detection</h3>
-                        <p>Implemented ML models to detect fraudulent transactions in real-time, reducing false positives by 40%.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">AWS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn"><i class="fa-solid fa-eye"></i> Demo</a>
-                            <a href="#" class="btn"><i class="fa-brands fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon"><i class="fa-solid fa-cloud"></i></div>
-                    <div class="project-info">
-                        <h3>Cloud Migration Automation</h3>
-                        <p>Built automation scripts to migrate legacy systems to AWS, reducing deployment time by 80%.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Terraform</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">AWS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn"><i class="fa-solid fa-eye"></i> Demo</a>
-                            <a href="#" class="btn"><i class="fa-brands fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
-                    <div class="project-info">
-                        <h3>Automated Trading Bot</h3>
-                        <p>Developed a trading bot that executes algorithmic trades based on market analysis, increasing returns by 15%.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">QuantLib</span>
-                            <span class="tech-tag">REST API</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn"><i class="fa-solid fa-eye"></i> Demo</a>
-                            <a href="#" class="btn"><i class="fa-brands fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- blogs section -->
-        <section class="blogs" id="blogs">
-            <h2 class="heading"><i class="fa-solid fa-pen-fancy"></i> My <span>Blog Posts</span></h2>
-
-            <div class="blogs-grid">
-                <a href="https://rvats20.hashnode.dev/vector-embeddings-turning-words-into-numbers" target="_blank" class="blog-card">
-                    <div class="blog-icon"><i class="fa-solid fa-vector-square"></i></div>
-                    <h3>Vector Embedding: Turning Vectors into Numbers</h3>
-                    <p>Unveiling the Power of Vector Embedding: Transforming Complex Data into Meaningful Numerical Representations.</p>
-                    <span class="blog-read-more">Read on Hashnode <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                </a>
-
-                <a href="https://rvats20.hashnode.dev/building-a-blog-post-application-in-django-easy-tutorial" target="_blank" class="blog-card">
-                    <div class="blog-icon"><i class="fa-brands fa-python"></i></div>
-                    <h3>Building a Blog Post Application in Django</h3>
-                    <p>A Step-by-Step Guide to Building a Blog Post Application with Django.</p>
-                    <span class="blog-read-more">Read on Hashnode <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                </a>
-
-                <a href="https://rvats20.hashnode.dev/understanding-cloud-computing-an-overview-guide" target="_blank" class="blog-card">
-                    <div class="blog-icon"><i class="fa-solid fa-cloud"></i></div>
-                    <h3>Understanding Cloud Computing: An Overview Guide</h3>
-                    <p>A Comprehensive Guide to Understanding Cloud Computing.</p>
-                    <span class="blog-read-more">Read on Hashnode <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                </a>
-
-                <a href="https://rvats20.hashnode.dev/easy-methods-to-restore-file-permissions-on-linux" target="_blank" class="blog-card">
-                    <div class="blog-icon"><i class="fa-brands fa-linux"></i></div>
-                    <h3>Easy Methods to Restore File Permissions on Linux</h3>
-                    <p>Simplifying System Security: Easy Techniques to Restore File Permissions on Linux.</p>
-                    <span class="blog-read-more">Read on Hashnode <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                </a>
-
-                <a href="https://rvats20.hashnode.dev/setting-up-and-managing-kubernetes-clusters" target="_blank" class="blog-card">
-                    <div class="blog-icon"><i class="fa-solid fa-dharmachakra"></i></div>
-                    <h3>Setting Up and Managing Kubernetes Clusters</h3>
-                    <p>A Comprehensive Guide to Setting Up and Managing Kubernetes Clusters.</p>
-                    <span class="blog-read-more">Read on Hashnode <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                </a>
-
-                <a href="https://rvats20.hashnode.dev/different-approaches-to-state-management" target="_blank" class="blog-card">
-                    <div class="blog-icon"><i class="fa-solid fa-diagram-project"></i></div>
-                    <h3>Different Approaches to State Management</h3>
-                    <p>Exploring Various Approaches to State Management.</p>
-                    <span class="blog-read-more">Read on Hashnode <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                </a>
-            </div>
-        </section>
-
-        <!-- education section -->
-        <section class="education section" id="education">
-            <h1 class="heading"><i class="fa-solid fa-graduation-cap"></i> My <span>Education & Certifications</span></h1>
-
-            <p class="qoute">"Either write something worth reading or do something worth writing."</p>
-
-            <div class="box-container">
-                <div class="box alt">
-                    <div class="content">
-                        <h3>Bachelor of Science, Mathematics</h3>
-                        <p>CCS University</p>
-                        <h4>2010 - 2014 | Completed</h4>
-                    </div>
-                </div>
-
-                <div class="box alt">
-                    <div class="content">
-                        <h3>AWS Certified Developer Associate</h3>
-                        <p>Amazon Web Services</p>
-                        <h4>Certified</h4>
-                    </div>
-                </div>
-
-                <div class="box alt">
-                    <div class="content">
-                        <h3>Intro to Deep Learning</h3>
-                        <p>Online Certification</p>
-                        <h4>Completed</h4>
-                    </div>
-                </div>
-
-                <div class="box alt">
-                    <div class="content">
-                        <h3>Build Local LLM Applications using Python and Ollama</h3>
-                        <p>Online Certification</p>
-                        <h4>Completed</h4>
-                    </div>
-                </div>
-
-                <div class="box alt">
-                    <div class="content">
-                        <h3>Cloud Computing: Deployment Administration</h3>
-                        <p>Online Certification</p>
-                        <h4>Completed</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- footer section -->
-        <section class="footer section" id="footer">
-            <div class="box-container">
-                <div class="box">
-                    <h3>Rahul's Portfolio</h3>
-                    <p>Thank you for visiting my personal portfolio website. Connect with me over social media.
-                        <br /><br /> Keep Rising. Connect with me over live chat!
-                    </p>
-                </div>
-
-                <div class="box">
-                    <h3>quick links</h3>
-                    <a href="#home"><i class="fa-solid fa-chevron-right"></i> home</a>
-                    <a href="#about"><i class="fa-solid fa-chevron-right"></i> about</a>
-                    <a href="#skills"><i class="fa-solid fa-chevron-right"></i> skills</a>
-                    <a href="#experience"><i class="fa-solid fa-chevron-right"></i> experience</a>
-                    <a href="#education"><i class="fa-solid fa-chevron-right"></i> education</a>
-                    <a href="#portfolio"><i class="fa-solid fa-chevron-right"></i> portfolio</a>
-                    <a href="#blogs"><i class="fa-solid fa-chevron-right"></i> blogs</a>
-                </div>
-
-                <div class="box">
-                    <h3>contact info</h3>
-                    <p><i class="fa-solid fa-envelope"></i>rahul.rkumar23@gmail.com</p>
-                    <p><i class="fa-solid fa-map-location-dot"></i>Noida, Sector-73, India</p>
-                    <br>
-                    <div class="share" id="share">
-                        <a href="https://www.linkedin.com/in/rahulvatts/" class="fa-brands fa-linkedin" aria-label="LinkedIn"
-                            target="_blank"></a>
-                        <a href="https://github.com/rvats20" class="fa-brands fa-github" aria-label="GitHub" target="_blank"></a>
-                        <a href="mailto:rahul.rkumar23@gmail.com" class="fa-solid fa-envelope" aria-label="Mail"
-                            target="_blank"></a>
-                        <a href="https://x.com/rahulx" class="fa-brands fa-x-twitter" aria-label="X"
-                            target="_blank"></a>
-                    </div>
-                </div>
-            </div>
-
-            <h1 class="credit">Designed with <i class="fa-solid fa-heart"></i> by <a
-                    href="https://www.linkedin.com/in/rahulvatts/"> Rahul Vats</a></h1>
-        </section>
-
-        <!-- scroll top btn -->
-        <a href="#home" aria-label="ScrollTop" class="fa-solid fa-angle-up" id="scroll-top"></a>
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-gray-800 transition-colors" aria-label="Menu">
+                <i data-lucide="menu" class="w-5 h-5"></i>
+            </button>
+        </div>
     </div>
 
-    <!-- jquery cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2">
+        <a href="#about" class="block py-2 text-sm hover:text-violet-500 transition-colors">About</a>
+        <a href="#skills" class="block py-2 text-sm hover:text-violet-500 transition-colors">Skills</a>
+        <a href="#experience" class="block py-2 text-sm hover:text-violet-500 transition-colors">Experience</a>
+        <a href="#projects" class="block py-2 text-sm hover:text-violet-500 transition-colors">Projects</a>
+        <a href="#opensource" class="block py-2 text-sm hover:text-violet-500 transition-colors">Open Source</a>
+        <a href="#blogs" class="block py-2 text-sm hover:text-violet-500 transition-colors">Blog</a>
+        <a href="#education" class="block py-2 text-sm hover:text-violet-500 transition-colors">Education</a>
+    </div>
+</nav>
 
-    <!-- typed.js cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
-        integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Command Palette -->
+<div id="cmd-palette-overlay" class="cmd-palette-overlay" onclick="closeCmdPalette()">
+    <div class="cmd-palette bg-white dark:bg-dark-surface border border-slate-200 dark:border-gray-700 shadow-2xl" onclick="event.stopPropagation()">
+        <div class="flex items-center gap-3 px-4 py-3 border-b border-slate-200 dark:border-gray-700">
+            <i data-lucide="search" class="w-5 h-5 text-slate-400"></i>
+            <input id="cmd-input" type="text" placeholder="Search sections..." class="flex-1 bg-transparent outline-none text-sm placeholder-slate-400 dark:placeholder-gray-500" oninput="filterCmdItems()">
+            <kbd class="px-1.5 py-0.5 text-xs font-mono text-slate-400 bg-slate-100 dark:bg-gray-800 rounded">ESC</kbd>
+        </div>
+        <div id="cmd-list" class="py-2 max-h-[300px] overflow-y-auto">
+            <a href="#hero" class="cmd-item flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-slate-100 dark:hover:bg-gray-800 transition-colors cursor-pointer" data-label="Home">
+                <i data-lucide="home" class="w-4 h-4 text-violet-500"></i> Home
+            </a>
+            <a href="#about" class="cmd-item flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-slate-100 dark:hover:bg-gray-800 transition-colors cursor-pointer" data-label="About">
+                <i data-lucide="user" class="w-4 h-4 text-violet-500"></i> About
+            </a>
+            <a href="#skills" class="cmd-item flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-slate-100 dark:hover:bg-gray-800 transition-colors cursor-pointer" data-label="Skills">
+                <i data-lucide="cpu" class="w-4 h-4 text-violet-500"></i> Skills
+            </a>
+            <a href="#experience" class="cmd-item flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-slate-100 dark:hover:bg-gray-800 transition-colors cursor-pointer" data-label="Experience">
+                <i data-lucide="briefcase" class="w-4 h-4 text-violet-500"></i> Experience
+            </a>
+            <a href="#projects" class="cmd-item flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-slate-100 dark:hover:bg-gray-800 transition-colors cursor-pointer" data-label="Projects">
+                <i data-lucide="code-2" class="w-4 h-4 text-violet-500"></i> Projects
+            </a>
+            <a href="#opensource" class="cmd-item flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-slate-100 dark:hover:bg-gray-800 transition-colors cursor-pointer" data-label="Open Source">
+                <i data-lucide="git-branch" class="w-4 h-4 text-violet-500"></i> Open Source
+            </a>
+            <a href="#blogs" class="cmd-item flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-slate-100 dark:hover:bg-gray-800 transition-colors cursor-pointer" data-label="Blog">
+                <i data-lucide="pen-line" class="w-4 h-4 text-violet-500"></i> Blog
+            </a>
+            <a href="#education" class="cmd-item flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-slate-100 dark:hover:bg-gray-800 transition-colors cursor-pointer" data-label="Education">
+                <i data-lucide="graduation-cap" class="w-4 h-4 text-violet-500"></i> Education
+            </a>
+        </div>
+    </div>
+</div>
 
-    <!-- particle.js links -->
-    <script src="./Assets/js/app.js"></script>
+<!-- ============ HERO ============ -->
+<section id="hero" class="hero-mesh min-h-screen flex items-center relative overflow-hidden pt-16">
+    <!-- Floating particles -->
+    <div class="particle w-2 h-2 top-[20%] left-[10%] opacity-40" style="animation-delay: 0s;"></div>
+    <div class="particle w-3 h-3 top-[60%] left-[80%] opacity-30" style="animation-delay: 2s;"></div>
+    <div class="particle w-1.5 h-1.5 top-[40%] left-[60%] opacity-50" style="animation-delay: 4s; background: rgba(59,130,246,0.3);"></div>
+    <div class="particle w-2 h-2 top-[80%] left-[25%] opacity-30" style="animation-delay: 1s; background: rgba(245,158,11,0.3);"></div>
 
-    <!-- vanilla tilt.js links -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
-        integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full">
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <!-- Available badge -->
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-500/10 border border-green-500/20 mb-6 reveal">
+                    <span class="pulse-dot"></span>
+                    <span class="text-xs font-medium text-green-600 dark:text-green-400">Available for work</span>
+                </div>
 
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4 reveal">
+                    Hi, I'm <span class="gradient-text">Rahul Vats</span>
+                </h1>
 
-    <!-- main js -->
-    <script src="./Assets/js/script.js"></script>
+                <div class="text-lg sm:text-xl text-slate-600 dark:text-gray-400 mb-6 reveal">
+                    I build
+                    <span class="typing-container">
+                        <span id="typed-text" class="typing-text-anim font-semibold text-violet-600 dark:text-violet-400"></span>
+                    </span>
+                </div>
+
+                <p class="text-slate-600 dark:text-gray-400 max-w-lg mb-8 leading-relaxed reveal mx-auto md:mx-0">
+                    Engineering Specialist with 12+ years helping organizations implement AI solutions with automated monitoring, cloud orchestration, and intelligent agents.
+                </p>
+
+                <div class="flex flex-wrap gap-3 justify-center md:justify-start mb-8 reveal">
+                    <a href="#projects" class="px-6 py-3 bg-violet-600 hover:bg-violet-700 text-white rounded-xl font-medium transition-all hover:shadow-lg hover:shadow-violet-500/25">
+                        View Projects
+                    </a>
+                    <a href="https://drive.google.com/file/d/14dp0FUWG9xykgag66wU1T2rmeoj6p4dl/view?usp=sharing" target="_blank" class="px-6 py-3 border border-slate-300 dark:border-gray-600 hover:border-violet-400 rounded-xl font-medium transition-all hover:shadow-lg">
+                        Resume
+                    </a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex gap-4 justify-center md:justify-start reveal">
+                    <a href="https://www.linkedin.com/in/rahulvatts/" target="_blank" aria-label="LinkedIn" class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-gray-800 transition-colors">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://github.com/rvats20" target="_blank" aria-label="GitHub" class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-gray-800 transition-colors">
+                        <i data-lucide="github" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://x.com/rahulx" target="_blank" aria-label="X / Twitter" class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-gray-800 transition-colors">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="mailto:rahul.rkumar23@gmail.com" aria-label="Email" class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-gray-800 transition-colors">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile image -->
+            <div class="flex-shrink-0 reveal">
+                <div class="w-64 h-64 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-violet-500/20 shadow-2xl shadow-violet-500/10">
+                    <img src="Assets/img/perfil.png" alt="Rahul Vats" class="w-full h-full object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ ABOUT — Bento Grid ============ -->
+<section id="about" class="py-20 sm:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 reveal">
+            About <span class="gradient-text">Me</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 reveal">
+            <!-- Bio Card (spans 2 cols) -->
+            <div class="md:col-span-2 p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                <h3 class="text-lg font-semibold mb-3">Who I Am</h3>
+                <p class="text-slate-600 dark:text-gray-400 leading-relaxed mb-4">
+                    I help organizations implement AI solutions with Automated Monitoring + Alerts. With 12+ years of experience in IT infrastructure and cloud technologies, I specialize in automation, AI agents, and container orchestration.
+                </p>
+                <p class="text-slate-600 dark:text-gray-400 leading-relaxed">
+                    My expertise spans building intelligent monitoring systems, deploying scalable cloud solutions, and implementing AI-powered workflows that drive operational efficiency. I'm passionate about bridging the gap between traditional infrastructure and modern AI-driven solutions.
+                </p>
+            </div>
+
+            <!-- Photo Card -->
+            <div class="p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow flex items-center justify-center">
+                <img src="Assets/img/about.jpg" alt="Rahul Vats" class="w-40 h-40 rounded-xl object-cover" loading="lazy">
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow text-center">
+                <div class="text-3xl font-bold gradient-text mb-1">12+</div>
+                <div class="text-sm text-slate-500 dark:text-gray-500">Years Experience</div>
+            </div>
+            <div class="p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow text-center">
+                <div class="text-3xl font-bold gradient-text mb-1">50+</div>
+                <div class="text-sm text-slate-500 dark:text-gray-500">Projects Delivered</div>
+            </div>
+            <div class="p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow text-center">
+                <div class="text-3xl font-bold gradient-text mb-1">5+</div>
+                <div class="text-sm text-slate-500 dark:text-gray-500">Certifications</div>
+            </div>
+
+            <!-- Contact Info Card (spans full) -->
+            <div class="md:col-span-3 p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                <h3 class="text-lg font-semibold mb-4">Tech Stack</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-violet-100 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300">Python</span>
+                    <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-700 dark:text-blue-300">AWS</span>
+                    <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-cyan-100 dark:bg-cyan-500/10 text-cyan-700 dark:text-cyan-300">Docker</span>
+                    <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-indigo-100 dark:bg-indigo-500/10 text-indigo-700 dark:text-indigo-300">Kubernetes</span>
+                    <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-amber-100 dark:bg-amber-500/10 text-amber-700 dark:text-amber-300">TensorFlow</span>
+                    <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-green-100 dark:bg-green-500/10 text-green-700 dark:text-green-300">Django</span>
+                    <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-emerald-100 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-300">Node.js</span>
+                    <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-orange-100 dark:bg-orange-500/10 text-orange-700 dark:text-orange-300">Terraform</span>
+                    <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-rose-100 dark:bg-rose-500/10 text-rose-700 dark:text-rose-300">AI Agents</span>
+                    <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-teal-100 dark:bg-teal-500/10 text-teal-700 dark:text-teal-300">MongoDB</span>
+                    <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-slate-100 dark:bg-slate-500/10 text-slate-700 dark:text-slate-300">Algorithms</span>
+                    <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-pink-100 dark:bg-pink-500/10 text-pink-700 dark:text-pink-300">Automation</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="py-20 sm:py-28 bg-slate-100/50 dark:bg-dark-surface/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 reveal">
+            Skills & <span class="gradient-text">Abilities</span>
+        </h2>
+
+        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 reveal">
+            <div class="skill-badge flex flex-col items-center gap-2 p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 cursor-default">
+                <img src="https://img.icons8.com/color/48/000000/python--v1.png" alt="Python" class="w-10 h-10" loading="lazy">
+                <span class="text-xs font-medium">Python</span>
+            </div>
+            <div class="skill-badge flex flex-col items-center gap-2 p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 cursor-default">
+                <img src="https://img.icons8.com/color/48/000000/tensorflow.png" alt="TensorFlow" class="w-10 h-10" loading="lazy">
+                <span class="text-xs font-medium">TensorFlow</span>
+            </div>
+            <div class="skill-badge flex flex-col items-center gap-2 p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 cursor-default">
+                <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS" class="w-10 h-10" loading="lazy">
+                <span class="text-xs font-medium">AWS</span>
+            </div>
+            <div class="skill-badge flex flex-col items-center gap-2 p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 cursor-default">
+                <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker" class="w-10 h-10" loading="lazy">
+                <span class="text-xs font-medium">Docker</span>
+            </div>
+            <div class="skill-badge flex flex-col items-center gap-2 p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 cursor-default">
+                <img src="https://img.icons8.com/color/48/000000/kubernetes.png" alt="Kubernetes" class="w-10 h-10" loading="lazy">
+                <span class="text-xs font-medium">Kubernetes</span>
+            </div>
+            <div class="skill-badge flex flex-col items-center gap-2 p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 cursor-default">
+                <img src="https://img.icons8.com/?size=100&id=IuuVVwsdTi2v&format=png&color=000000" alt="Django" class="w-10 h-10" loading="lazy">
+                <span class="text-xs font-medium">Django</span>
+            </div>
+            <div class="skill-badge flex flex-col items-center gap-2 p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 cursor-default">
+                <img src="https://img.icons8.com/?size=100&id=54087&format=png&color=000000" alt="Node.js" class="w-10 h-10" loading="lazy">
+                <span class="text-xs font-medium">Node.js</span>
+            </div>
+            <div class="skill-badge flex flex-col items-center gap-2 p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 cursor-default">
+                <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt="JavaScript" class="w-10 h-10" loading="lazy">
+                <span class="text-xs font-medium">JavaScript</span>
+            </div>
+            <div class="skill-badge flex flex-col items-center gap-2 p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 cursor-default">
+                <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="React" class="w-10 h-10" loading="lazy">
+                <span class="text-xs font-medium">React</span>
+            </div>
+            <div class="skill-badge flex flex-col items-center gap-2 p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 cursor-default">
+                <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB" class="w-10 h-10" loading="lazy">
+                <span class="text-xs font-medium">MongoDB</span>
+            </div>
+            <div class="skill-badge flex flex-col items-center gap-2 p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 cursor-default">
+                <img src="https://img.icons8.com/color/48/000000/mysql-logo.png" alt="MySQL" class="w-10 h-10" loading="lazy">
+                <span class="text-xs font-medium">MySQL</span>
+            </div>
+            <div class="skill-badge flex flex-col items-center gap-2 p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 cursor-default">
+                <img src="https://img.icons8.com/color/48/000000/cloud-computing.png" alt="Cloud" class="w-10 h-10" loading="lazy">
+                <span class="text-xs font-medium">Cloud</span>
+            </div>
+            <div class="skill-badge flex flex-col items-center gap-2 p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 cursor-default">
+                <img src="https://img.icons8.com/color/48/000000/flow-chart.png" alt="Algorithms" class="w-10 h-10" loading="lazy">
+                <span class="text-xs font-medium">Algorithms</span>
+            </div>
+            <div class="skill-badge flex flex-col items-center gap-2 p-4 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 cursor-default">
+                <img src="https://img.icons8.com/color/48/000000/settings--v1.png" alt="Automation" class="w-10 h-10" loading="lazy">
+                <span class="text-xs font-medium">Automation</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="py-20 sm:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 reveal">
+            Work <span class="gradient-text">Experience</span>
+        </h2>
+
+        <div class="relative">
+            <!-- Timeline line (desktop only) -->
+            <div class="timeline-line hidden md:block"></div>
+
+            <!-- Timeline line (mobile) -->
+            <div class="md:hidden absolute left-[20px] top-0 bottom-0 w-0.5 bg-gradient-to-b from-violet-500 to-blue-500"></div>
+
+            <div class="space-y-12">
+                <!-- Experience 1 -->
+                <div class="reveal relative flex flex-col md:flex-row items-start gap-4 md:gap-0">
+                    <div class="md:w-1/2 md:pr-12 md:text-right pl-12 md:pl-0">
+                        <div class="p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                            <div class="text-violet-600 dark:text-violet-400 font-semibold text-sm mb-1">Jul 2023 — Jan 2026</div>
+                            <h3 class="text-lg font-bold">Engineering Specialist</h3>
+                            <p class="text-slate-500 dark:text-gray-500 text-sm mb-3">insightsoftware</p>
+                            <ul class="text-sm text-slate-600 dark:text-gray-400 space-y-1.5 md:text-right">
+                                <li>Architected AI-powered monitoring pipelines, reducing incident response time by 60%</li>
+                                <li>Led migration of legacy infrastructure to Kubernetes, achieving 99.9% uptime</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Dot -->
+                    <div class="absolute left-[16px] md:left-1/2 md:-translate-x-1/2 top-8 w-3 h-3 rounded-full bg-violet-500 border-4 border-slate-50 dark:border-dark-base z-10"></div>
+                    <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="reveal relative flex flex-col md:flex-row items-start gap-4 md:gap-0">
+                    <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                    <div class="absolute left-[16px] md:left-1/2 md:-translate-x-1/2 top-8 w-3 h-3 rounded-full bg-blue-500 border-4 border-slate-50 dark:border-dark-base z-10"></div>
+                    <div class="md:w-1/2 md:pl-12 pl-12 md:pl-12">
+                        <div class="p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                            <div class="text-blue-600 dark:text-blue-400 font-semibold text-sm mb-1">Apr 2019 — Mar 2023</div>
+                            <h3 class="text-lg font-bold">Senior System Analyst</h3>
+                            <p class="text-slate-500 dark:text-gray-500 text-sm mb-3">RateGain</p>
+                            <ul class="text-sm text-slate-600 dark:text-gray-400 space-y-1.5">
+                                <li>Automated deployment pipelines reducing release cycles from days to hours</li>
+                                <li>Managed cloud infrastructure serving 10M+ daily API requests</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="reveal relative flex flex-col md:flex-row items-start gap-4 md:gap-0">
+                    <div class="md:w-1/2 md:pr-12 md:text-right pl-12 md:pl-0">
+                        <div class="p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                            <div class="text-violet-600 dark:text-violet-400 font-semibold text-sm mb-1">Mar 2016 — Mar 2019</div>
+                            <h3 class="text-lg font-bold">System Integration Specialist</h3>
+                            <p class="text-slate-500 dark:text-gray-500 text-sm mb-3">Net4 India Ltd</p>
+                            <ul class="text-sm text-slate-600 dark:text-gray-400 space-y-1.5 md:text-right">
+                                <li>Integrated monitoring tools across 200+ servers for unified observability</li>
+                                <li>Reduced system downtime by 45% through proactive alerting strategies</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="absolute left-[16px] md:left-1/2 md:-translate-x-1/2 top-8 w-3 h-3 rounded-full bg-violet-500 border-4 border-slate-50 dark:border-dark-base z-10"></div>
+                    <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="reveal relative flex flex-col md:flex-row items-start gap-4 md:gap-0">
+                    <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                    <div class="absolute left-[16px] md:left-1/2 md:-translate-x-1/2 top-8 w-3 h-3 rounded-full bg-blue-500 border-4 border-slate-50 dark:border-dark-base z-10"></div>
+                    <div class="md:w-1/2 md:pl-12 pl-12 md:pl-12">
+                        <div class="p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                            <div class="text-blue-600 dark:text-blue-400 font-semibold text-sm mb-1">May 2014 — Mar 2016</div>
+                            <h3 class="text-lg font-bold">Technical Support Specialist</h3>
+                            <p class="text-slate-500 dark:text-gray-500 text-sm mb-3">Wipro</p>
+                            <ul class="text-sm text-slate-600 dark:text-gray-400 space-y-1.5">
+                                <li>Provided L2/L3 support for enterprise clients, maintaining 98% SLA compliance</li>
+                                <li>Built automation scripts reducing repetitive ticket resolution time by 50%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="py-20 sm:py-28 bg-slate-100/50 dark:bg-dark-surface/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 reveal">
+            Featured <span class="gradient-text">Projects</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal">
+            <!-- Project 1 -->
+            <div class="group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                <div class="h-48 overflow-hidden">
+                    <img src="Assets/img/work1.jpg" alt="Fintech Fraud Detection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-bold mb-2">Fintech Fraud Detection</h3>
+                    <p class="text-sm text-slate-600 dark:text-gray-400 mb-4">ML models detecting fraudulent transactions in real-time, reducing false positives by 40%.</p>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-violet-100 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300">Python</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-700 dark:text-blue-300">TensorFlow</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-green-100 dark:bg-green-500/10 text-green-700 dark:text-green-300">Pandas</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-amber-100 dark:bg-amber-500/10 text-amber-700 dark:text-amber-300">AWS</span>
+                    </div>
+                    <a href="https://github.com/rvats20" target="_blank" class="inline-flex items-center gap-1.5 text-sm text-violet-600 dark:text-violet-400 hover:underline">
+                        <i data-lucide="github" class="w-4 h-4"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                <div class="h-48 overflow-hidden">
+                    <img src="Assets/img/work2.jpg" alt="Cloud Migration Automation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-bold mb-2">Cloud Migration Automation</h3>
+                    <p class="text-sm text-slate-600 dark:text-gray-400 mb-4">Automation scripts migrating legacy systems to AWS, reducing deployment time by 80%.</p>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-violet-100 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300">Python</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-orange-100 dark:bg-orange-500/10 text-orange-700 dark:text-orange-300">Terraform</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-cyan-100 dark:bg-cyan-500/10 text-cyan-700 dark:text-cyan-300">Docker</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-amber-100 dark:bg-amber-500/10 text-amber-700 dark:text-amber-300">AWS</span>
+                    </div>
+                    <a href="https://github.com/rvats20" target="_blank" class="inline-flex items-center gap-1.5 text-sm text-violet-600 dark:text-violet-400 hover:underline">
+                        <i data-lucide="github" class="w-4 h-4"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                <div class="h-48 overflow-hidden">
+                    <img src="Assets/img/work3.jpg" alt="Automated Trading Bot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-bold mb-2">Automated Trading Bot</h3>
+                    <p class="text-sm text-slate-600 dark:text-gray-400 mb-4">Algorithmic trading bot executing trades based on market analysis, increasing returns by 15%.</p>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-violet-100 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300">Python</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-rose-100 dark:bg-rose-500/10 text-rose-700 dark:text-rose-300">QuantLib</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-700 dark:text-blue-300">REST API</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-green-100 dark:bg-green-500/10 text-green-700 dark:text-green-300">MongoDB</span>
+                    </div>
+                    <a href="https://github.com/rvats20" target="_blank" class="inline-flex items-center gap-1.5 text-sm text-violet-600 dark:text-violet-400 hover:underline">
+                        <i data-lucide="github" class="w-4 h-4"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                <div class="h-48 overflow-hidden">
+                    <img src="Assets/img/work4.jpg" alt="Python Financial Analysis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-2">
+                        <h3 class="text-lg font-bold">Python Financial Analysis</h3>
+                        <span class="flex items-center gap-0.5 text-xs text-amber-500"><i data-lucide="star" class="w-3 h-3"></i>8</span>
+                    </div>
+                    <p class="text-sm text-slate-600 dark:text-gray-400 mb-4">Financial data analysis toolkit with stock price prediction, trading algorithms, and Sharpe ratio analysis using Python.</p>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-violet-100 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300">Python</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-700 dark:text-blue-300">Pandas</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-green-100 dark:bg-green-500/10 text-green-700 dark:text-green-300">Scikit-Learn</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-amber-100 dark:bg-amber-500/10 text-amber-700 dark:text-amber-300">Matplotlib</span>
+                    </div>
+                    <a href="https://github.com/rvats20/Python-Financial-Analysis" target="_blank" class="inline-flex items-center gap-1.5 text-sm text-violet-600 dark:text-violet-400 hover:underline">
+                        <i data-lucide="github" class="w-4 h-4"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                <div class="h-48 overflow-hidden">
+                    <img src="Assets/img/work5.jpg" alt="Python Ollama LLM Agents" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-2">
+                        <h3 class="text-lg font-bold">LLM Agents & RAG with Ollama</h3>
+                        <span class="flex items-center gap-0.5 text-xs text-amber-500"><i data-lucide="star" class="w-3 h-3"></i>5</span>
+                    </div>
+                    <p class="text-sm text-slate-600 dark:text-gray-400 mb-4">Local LLM agents using Llama3 and Ollama with RAG pipelines, generative AI experiments, and deep reinforcement learning.</p>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-violet-100 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300">Python</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-rose-100 dark:bg-rose-500/10 text-rose-700 dark:text-rose-300">Llama3</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-cyan-100 dark:bg-cyan-500/10 text-cyan-700 dark:text-cyan-300">LangChain</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-orange-100 dark:bg-orange-500/10 text-orange-700 dark:text-orange-300">RAG</span>
+                    </div>
+                    <a href="https://github.com/rvats20/python-ollama" target="_blank" class="inline-flex items-center gap-1.5 text-sm text-violet-600 dark:text-violet-400 hover:underline">
+                        <i data-lucide="github" class="w-4 h-4"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                <div class="h-48 overflow-hidden">
+                    <img src="Assets/img/work6.jpg" alt="RAG LLM Application" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-2">
+                        <h3 class="text-lg font-bold">RAG-LLM Application</h3>
+                        <span class="flex items-center gap-0.5 text-xs text-amber-500"><i data-lucide="star" class="w-3 h-3"></i>2</span>
+                    </div>
+                    <p class="text-sm text-slate-600 dark:text-gray-400 mb-4">Retrieval-Augmented Generation app integrating OpenAI and Ollama to fetch relevant documents and generate coherent, informative outputs.</p>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-violet-100 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300">Python</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-green-100 dark:bg-green-500/10 text-green-700 dark:text-green-300">OpenAI</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-700 dark:text-blue-300">Ollama</span>
+                        <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-orange-100 dark:bg-orange-500/10 text-orange-700 dark:text-orange-300">RAG</span>
+                    </div>
+                    <a href="https://github.com/rvats20/RAG-LLM-APP" target="_blank" class="inline-flex items-center gap-1.5 text-sm text-violet-600 dark:text-violet-400 hover:underline">
+                        <i data-lucide="github" class="w-4 h-4"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ OPEN SOURCE ============ -->
+<section id="opensource" class="py-20 sm:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 reveal">
+            Open <span class="gradient-text">Source</span>
+        </h2>
+
+        <div class="flex flex-col items-center gap-6 reveal">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-2xl">
+                <img src="https://github-readme-stats.vercel.app/api?username=rvats20&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0a0f" alt="GitHub Stats" class="rounded-xl w-full" loading="lazy">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rvats20&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0a0f" alt="Top Languages" class="rounded-xl w-full" loading="lazy">
+            </div>
+            <a href="https://github.com/rvats20" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 border border-slate-300 dark:border-gray-600 hover:border-violet-400 rounded-xl text-sm font-medium transition-all">
+                <i data-lucide="github" class="w-4 h-4"></i> View GitHub Profile
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ BLOGS ============ -->
+<section id="blogs" class="py-20 sm:py-28 bg-slate-100/50 dark:bg-dark-surface/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 reveal">
+            Blog <span class="gradient-text">Posts</span>
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+            <!-- Blog 1 -->
+            <a href="https://rvats20.hashnode.dev/vector-embeddings-turning-words-into-numbers" target="_blank"
+               class="group p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow block">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-violet-100 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300">AI / ML</span>
+                    <span class="text-[10px] text-slate-400">5 min read</span>
+                </div>
+                <h3 class="font-bold mb-2 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">Vector Embedding: Turning Words into Numbers</h3>
+                <p class="text-sm text-slate-600 dark:text-gray-400 mb-4">Unveiling the Power of Vector Embedding: Transforming Complex Data into Meaningful Numerical Representations.</p>
+                <span class="text-sm text-violet-600 dark:text-violet-400 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Read on Hashnode <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </span>
+            </a>
+
+            <!-- Blog 2 -->
+            <a href="https://rvats20.hashnode.dev/building-a-blog-post-application-in-django-easy-tutorial" target="_blank"
+               class="group p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow block">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-green-100 dark:bg-green-500/10 text-green-700 dark:text-green-300">Django</span>
+                    <span class="text-[10px] text-slate-400">8 min read</span>
+                </div>
+                <h3 class="font-bold mb-2 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">Building a Blog Post Application in Django</h3>
+                <p class="text-sm text-slate-600 dark:text-gray-400 mb-4">A Step-by-Step Guide to Building a Blog Post Application with Django.</p>
+                <span class="text-sm text-violet-600 dark:text-violet-400 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Read on Hashnode <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </span>
+            </a>
+
+            <!-- Blog 3 -->
+            <a href="https://rvats20.hashnode.dev/understanding-cloud-computing-an-overview-guide" target="_blank"
+               class="group p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow block">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-700 dark:text-blue-300">Cloud</span>
+                    <span class="text-[10px] text-slate-400">6 min read</span>
+                </div>
+                <h3 class="font-bold mb-2 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">Understanding Cloud Computing: An Overview Guide</h3>
+                <p class="text-sm text-slate-600 dark:text-gray-400 mb-4">A Comprehensive Guide to Understanding Cloud Computing.</p>
+                <span class="text-sm text-violet-600 dark:text-violet-400 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Read on Hashnode <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </span>
+            </a>
+
+            <!-- Blog 4 -->
+            <a href="https://rvats20.hashnode.dev/easy-methods-to-restore-file-permissions-on-linux" target="_blank"
+               class="group p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow block">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-amber-100 dark:bg-amber-500/10 text-amber-700 dark:text-amber-300">Linux</span>
+                    <span class="text-[10px] text-slate-400">4 min read</span>
+                </div>
+                <h3 class="font-bold mb-2 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">Easy Methods to Restore File Permissions on Linux</h3>
+                <p class="text-sm text-slate-600 dark:text-gray-400 mb-4">Simplifying System Security: Easy Techniques to Restore File Permissions on Linux.</p>
+                <span class="text-sm text-violet-600 dark:text-violet-400 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Read on Hashnode <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </span>
+            </a>
+
+            <!-- Blog 5 -->
+            <a href="https://rvats20.hashnode.dev/setting-up-and-managing-kubernetes-clusters" target="_blank"
+               class="group p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow block">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-indigo-100 dark:bg-indigo-500/10 text-indigo-700 dark:text-indigo-300">Kubernetes</span>
+                    <span class="text-[10px] text-slate-400">7 min read</span>
+                </div>
+                <h3 class="font-bold mb-2 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">Setting Up and Managing Kubernetes Clusters</h3>
+                <p class="text-sm text-slate-600 dark:text-gray-400 mb-4">A Comprehensive Guide to Setting Up and Managing Kubernetes Clusters.</p>
+                <span class="text-sm text-violet-600 dark:text-violet-400 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Read on Hashnode <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </span>
+            </a>
+
+            <!-- Blog 6 -->
+            <a href="https://rvats20.hashnode.dev/different-approaches-to-state-management" target="_blank"
+               class="group p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow block">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-rose-100 dark:bg-rose-500/10 text-rose-700 dark:text-rose-300">Architecture</span>
+                    <span class="text-[10px] text-slate-400">5 min read</span>
+                </div>
+                <h3 class="font-bold mb-2 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">Different Approaches to State Management</h3>
+                <p class="text-sm text-slate-600 dark:text-gray-400 mb-4">Exploring Various Approaches to State Management in Modern Applications.</p>
+                <span class="text-sm text-violet-600 dark:text-violet-400 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Read on Hashnode <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ EDUCATION & CERTS ============ -->
+<section id="education" class="py-20 sm:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 reveal">
+            Education & <span class="gradient-text">Certifications</span>
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
+            <div class="p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="p-2 rounded-lg bg-violet-100 dark:bg-violet-500/10">
+                        <i data-lucide="graduation-cap" class="w-5 h-5 text-violet-600 dark:text-violet-400"></i>
+                    </div>
+                    <span class="text-xs text-slate-500 dark:text-gray-500">2010 — 2014</span>
+                </div>
+                <h3 class="font-bold text-sm mb-1">Bachelor of Science, Mathematics</h3>
+                <p class="text-sm text-slate-500 dark:text-gray-500">CCS University</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="p-2 rounded-lg bg-amber-100 dark:bg-amber-500/10">
+                        <i data-lucide="award" class="w-5 h-5 text-amber-600 dark:text-amber-400"></i>
+                    </div>
+                    <span class="text-xs text-green-600 dark:text-green-400 font-medium">Certified</span>
+                </div>
+                <h3 class="font-bold text-sm mb-1">AWS Certified Developer Associate</h3>
+                <p class="text-sm text-slate-500 dark:text-gray-500">Amazon Web Services</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-500/10">
+                        <i data-lucide="brain" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+                    </div>
+                    <span class="text-xs text-green-600 dark:text-green-400 font-medium">Completed</span>
+                </div>
+                <h3 class="font-bold text-sm mb-1">Intro to Deep Learning</h3>
+                <p class="text-sm text-slate-500 dark:text-gray-500">Online Certification</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="p-2 rounded-lg bg-rose-100 dark:bg-rose-500/10">
+                        <i data-lucide="bot" class="w-5 h-5 text-rose-600 dark:text-rose-400"></i>
+                    </div>
+                    <span class="text-xs text-green-600 dark:text-green-400 font-medium">Completed</span>
+                </div>
+                <h3 class="font-bold text-sm mb-1">Build Local LLM Applications using Python and Ollama</h3>
+                <p class="text-sm text-slate-500 dark:text-gray-500">Online Certification</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white dark:bg-dark-card border border-slate-200/50 dark:border-gray-800 card-glow">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="p-2 rounded-lg bg-cyan-100 dark:bg-cyan-500/10">
+                        <i data-lucide="cloud" class="w-5 h-5 text-cyan-600 dark:text-cyan-400"></i>
+                    </div>
+                    <span class="text-xs text-green-600 dark:text-green-400 font-medium">Completed</span>
+                </div>
+                <h3 class="font-bold text-sm mb-1">Cloud Computing: Deployment Administration</h3>
+                <p class="text-sm text-slate-500 dark:text-gray-500">Online Certification</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="py-12 border-t border-slate-200 dark:border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <!-- Branding -->
+            <div>
+                <h3 class="text-lg font-bold gradient-text mb-3">Rahul Vats</h3>
+                <p class="text-sm text-slate-600 dark:text-gray-400 leading-relaxed">
+                    AI Solutions & Cloud Infrastructure Specialist. Building intelligent systems that scale.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="font-semibold mb-3 text-sm">Quick Links</h4>
+                <div class="grid grid-cols-2 gap-1">
+                    <a href="#about" class="text-sm text-slate-600 dark:text-gray-400 hover:text-violet-500 transition-colors py-0.5">About</a>
+                    <a href="#skills" class="text-sm text-slate-600 dark:text-gray-400 hover:text-violet-500 transition-colors py-0.5">Skills</a>
+                    <a href="#experience" class="text-sm text-slate-600 dark:text-gray-400 hover:text-violet-500 transition-colors py-0.5">Experience</a>
+                    <a href="#projects" class="text-sm text-slate-600 dark:text-gray-400 hover:text-violet-500 transition-colors py-0.5">Projects</a>
+                    <a href="#blogs" class="text-sm text-slate-600 dark:text-gray-400 hover:text-violet-500 transition-colors py-0.5">Blog</a>
+                    <a href="#education" class="text-sm text-slate-600 dark:text-gray-400 hover:text-violet-500 transition-colors py-0.5">Education</a>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4 class="font-semibold mb-3 text-sm">Contact</h4>
+                <div class="space-y-2">
+                    <a href="mailto:rahul.rkumar23@gmail.com" class="flex items-center gap-2 text-sm text-slate-600 dark:text-gray-400 hover:text-violet-500 transition-colors">
+                        <i data-lucide="mail" class="w-4 h-4"></i> rahul.rkumar23@gmail.com
+                    </a>
+                    <p class="flex items-center gap-2 text-sm text-slate-600 dark:text-gray-400">
+                        <i data-lucide="map-pin" class="w-4 h-4"></i> Noida, Sector-73, India
+                    </p>
+                </div>
+                <div class="flex gap-3 mt-4">
+                    <a href="https://www.linkedin.com/in/rahulvatts/" target="_blank" aria-label="LinkedIn" class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-gray-800 transition-colors">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i>
+                    </a>
+                    <a href="https://github.com/rvats20" target="_blank" aria-label="GitHub" class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-gray-800 transition-colors">
+                        <i data-lucide="github" class="w-4 h-4"></i>
+                    </a>
+                    <a href="https://x.com/rahulx" target="_blank" aria-label="X" class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-gray-800 transition-colors">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-6 border-t border-slate-200 dark:border-gray-800 text-center">
+            <p class="text-xs text-slate-500 dark:text-gray-600">Designed by Rahul Vats</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to top button -->
+<button id="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="fixed bottom-6 right-6 p-3 rounded-full bg-violet-600 text-white shadow-lg shadow-violet-500/25 opacity-0 translate-y-4 transition-all duration-300 hover:bg-violet-700 z-40" aria-label="Scroll to top">
+    <i data-lucide="chevron-up" class="w-5 h-5"></i>
+</button>
+
+<script>
+// Initialize Lucide icons
+lucide.createIcons();
+
+// ===== DARK/LIGHT MODE =====
+const html = document.documentElement;
+const themeToggle = document.getElementById('theme-toggle');
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') { html.classList.remove('dark'); }
+else { html.classList.add('dark'); }
+
+themeToggle.addEventListener('click', () => {
+    html.classList.toggle('dark');
+    localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+});
+
+// ===== MOBILE MENU =====
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
+// Close on link click
+mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+});
+
+// ===== SCROLL PROGRESS BAR =====
+const progressBar = document.getElementById('scroll-progress');
+window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const progress = (scrollTop / scrollHeight) * 100;
+    progressBar.style.width = progress + '%';
+});
+
+// ===== SCROLL TO TOP BUTTON =====
+const scrollTopBtn = document.getElementById('scroll-top-btn');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+        scrollTopBtn.style.opacity = '1';
+        scrollTopBtn.style.transform = 'translateY(0)';
+    } else {
+        scrollTopBtn.style.opacity = '0';
+        scrollTopBtn.style.transform = 'translateY(1rem)';
+    }
+});
+
+// ===== INTERSECTION OBSERVER — Reveal Animations =====
+const revealElements = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+revealElements.forEach(el => revealObserver.observe(el));
+
+// ===== CSS TYPING EFFECT =====
+const typingTexts = ['AI Solutions', 'Automated Monitoring', 'Cloud Orchestration', 'AI Agents'];
+let typingIndex = 0;
+const typedEl = document.getElementById('typed-text');
+
+function cycleTyping() {
+    typedEl.textContent = typingTexts[typingIndex];
+    typingIndex = (typingIndex + 1) % typingTexts.length;
+}
+cycleTyping();
+setInterval(cycleTyping, 3500);
+
+// ===== COMMAND PALETTE =====
+const cmdOverlay = document.getElementById('cmd-palette-overlay');
+const cmdInput = document.getElementById('cmd-input');
+const cmdItems = document.querySelectorAll('.cmd-item');
+let cmdSelectedIndex = 0;
+
+function openCmdPalette() {
+    cmdOverlay.classList.add('open');
+    cmdInput.value = '';
+    filterCmdItems();
+    cmdInput.focus();
+    cmdSelectedIndex = 0;
+    updateCmdSelection();
+}
+
+function closeCmdPalette() {
+    cmdOverlay.classList.remove('open');
+}
+
+function filterCmdItems() {
+    const query = cmdInput.value.toLowerCase();
+    cmdItems.forEach(item => {
+        const label = item.getAttribute('data-label').toLowerCase();
+        item.style.display = label.includes(query) ? '' : 'none';
+    });
+    cmdSelectedIndex = 0;
+    updateCmdSelection();
+}
+
+function getVisibleCmdItems() {
+    return [...cmdItems].filter(item => item.style.display !== 'none');
+}
+
+function updateCmdSelection() {
+    const visible = getVisibleCmdItems();
+    cmdItems.forEach(item => item.classList.remove('selected'));
+    if (visible[cmdSelectedIndex]) {
+        visible[cmdSelectedIndex].classList.add('selected');
+    }
+}
+
+document.addEventListener('keydown', (e) => {
+    // Open with Cmd+K or Ctrl+K
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        if (cmdOverlay.classList.contains('open')) { closeCmdPalette(); }
+        else { openCmdPalette(); }
+    }
+    // Close with Escape
+    if (e.key === 'Escape' && cmdOverlay.classList.contains('open')) {
+        closeCmdPalette();
+    }
+    // Navigate with arrows
+    if (cmdOverlay.classList.contains('open')) {
+        const visible = getVisibleCmdItems();
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            cmdSelectedIndex = Math.min(cmdSelectedIndex + 1, visible.length - 1);
+            updateCmdSelection();
+        }
+        if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            cmdSelectedIndex = Math.max(cmdSelectedIndex - 1, 0);
+            updateCmdSelection();
+        }
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            if (visible[cmdSelectedIndex]) {
+                visible[cmdSelectedIndex].click();
+                closeCmdPalette();
+            }
+        }
+    }
+});
+
+// ===== ACTIVE NAV HIGHLIGHTING =====
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('nav a[href^="#"]');
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+        }
+    });
+    navLinks.forEach(link => {
+        link.classList.remove('text-violet-600', 'dark:text-violet-400');
+        if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('text-violet-600', 'dark:text-violet-400');
+        }
+    });
+});
+</script>
 </body>
-
 </html>
